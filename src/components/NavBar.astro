@@ -1,0 +1,142 @@
+<div class="relative bg-neutral-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div
+            class="flex justify-between items-center border-b-2 py-6 md:justify-start md:space-x-10 border-none duration-300 ease-in-out"
+        >
+            <div class="flex justify-start lg:w-0 lg:flex-1">
+                <a href="/">
+                    <span class=" bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-purple-500 font-bold text-3xl">OA</span>
+                </a>
+            </div>
+            <div class="-mr-2 -my-2 md:hidden">
+                <button
+                    type="button"
+                    class="bg-transparent text-white font-bold p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-violet-600 focus:ring-offset-neutral-800"
+                    aria-expanded="false"
+                    onclick="document.getElementById('mobile-nav').classList.remove('hidden');"
+                    id="show"
+                >
+                    <span class="sr-only">Open menu</span>
+                    <svg
+                        class="h-6 w-6"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="2"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            <nav class="hidden md:flex text-right space-x-10">
+                <a
+                    href="/"
+                    class="text-base font-medium text-white hover:text-violet-500"
+                >
+                    Home
+                </a>
+                <a
+                    href="/#portfolio"
+                    class="text-base font-medium text-white hover:text-violet-500"
+                >
+                    Portfolio
+                </a>
+                <a
+                    href="/blog"
+                    class="text-base font-medium text-white hover:text-violet-500"
+                >
+                    Blog
+                </a>
+                <a
+                    href="/contact"
+                    class="text-base font-medium text-white hover:text-violet-500"
+                >
+                    Contact
+                </a>
+            </nav>
+        </div>
+    </div>
+    <div
+        id="mobile-nav"
+        class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden hidden"
+    >
+        <div
+            class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-neutral-800 divide-y-2 text-white divide-neutral-50"
+        >
+            <div class="pt-5 pb-6 px-5">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <span class=" bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-purple-500 font-bold text-3xl text-center">OLEKALEKSANDER</span>
+                    </div>
+                    <div class="-mr-2">
+                        <button
+                            type="button"
+                            onclick="document.getElementById('mobile-nav').classList.add('hidden');"
+                            class="bg-transparent rounded-md p-2 inline-flex items-center justify-center text-neutral-400 hover:text-neutral-300 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-violet-500"
+                        >
+                            <span class="sr-only">Close menu</span>
+                            <svg
+                                class="h-6 w-6"
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="2"
+                                stroke="currentColor"
+                                aria-hidden="true"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="mt-6">
+                    <nav class="grid gap-y-8">
+                        <a
+                            href="/"
+                            class="-m-3 p-3 flex items-center rounded-md hover:bg-neutral-700"
+                        >
+                            <span class="ml-3 text-base font-medium text-white">
+                                Home
+                            </span>
+                        </a>
+
+                        <a
+                            href="/portfolio"
+                            class="-m-3 p-3 flex items-center rounded-md hover:bg-neutral-700"
+                        >
+                            <span class="ml-3 text-base font-medium text-white">
+                                Portfolio
+                            </span>
+                        </a>
+
+                        <a
+                            href="/blog"
+                            class="-m-3 p-3 flex items-center rounded-md hover:bg-neutral-700"
+                        >
+                            <span class="ml-3 text-base font-medium text-white">
+                                Blog
+                            </span>
+                        </a>
+
+                        <a
+                            href="/contact"
+                            class="-m-3 p-3 flex items-center rounded-md hover:bg-neutral-700"
+                        >
+                            <span class="ml-3 text-base font-medium text-white">
+                                Contact
+                            </span>
+                        </a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
