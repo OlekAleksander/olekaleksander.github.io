@@ -1,11 +1,14 @@
 <div class="relative bg-neutral-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
         <div
-            class="flex justify-between items-center border-b-2 py-6 md:justify-start md:space-x-10 border-none duration-300 ease-in-out"
+            class="flex justify-between items-center border-b-2 py-6 md:space-x-10 border-none duration-300 ease-in-out"
         >
             <div class="flex justify-start lg:w-0 lg:flex-1">
                 <a href="/">
-                    <span class=" bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-purple-500 font-bold text-3xl">OA</span>
+                    <span
+                        class="bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-purple-500 font-bold text-3xl"
+                        >OA
+                    </span>
                 </a>
             </div>
             <div class="-mr-2 -my-2 md:hidden">
@@ -36,27 +39,24 @@
             <nav class="hidden md:flex text-right space-x-10">
                 <a
                     href="/"
+                    id="home"
                     class="text-base font-medium text-white hover:text-violet-500"
                 >
                     Home
                 </a>
                 <a
-                    href="/#portfolio"
+                    href="/portfolio"
+                    id="portfolio"
                     class="text-base font-medium text-white hover:text-violet-500"
                 >
                     Portfolio
                 </a>
                 <a
-                    href="/blog"
+                    href="/blog/posts"
+                    id="blog"
                     class="text-base font-medium text-white hover:text-violet-500"
                 >
                     Blog
-                </a>
-                <a
-                    href="/contact"
-                    class="text-base font-medium text-white hover:text-violet-500"
-                >
-                    Contact
                 </a>
             </nav>
         </div>
@@ -71,7 +71,10 @@
             <div class="pt-5 pb-6 px-5">
                 <div class="flex items-center justify-between">
                     <div>
-                        <span class=" bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-purple-500 font-bold text-3xl text-center">OLEKALEKSANDER</span>
+                        <span
+                            class="bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-violet-500 font-bold text-3xl text-center"
+                            >OLEKALEKSANDER
+                        </span>
                     </div>
                     <div class="-mr-2">
                         <button
@@ -118,20 +121,11 @@
                         </a>
 
                         <a
-                            href="/blog"
+                            href="/blog/posts"
                             class="-m-3 p-3 flex items-center rounded-md hover:bg-neutral-700"
                         >
                             <span class="ml-3 text-base font-medium text-white">
                                 Blog
-                            </span>
-                        </a>
-
-                        <a
-                            href="/contact"
-                            class="-m-3 p-3 flex items-center rounded-md hover:bg-neutral-700"
-                        >
-                            <span class="ml-3 text-base font-medium text-white">
-                                Contact
                             </span>
                         </a>
                     </nav>

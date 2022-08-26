@@ -1,0 +1,47 @@
+---
+import Button from "../components/Button.astro";
+import PageHolder from "../layouts/PageHolder.astro";
+---
+
+<PageHolder title="Portfolio">
+    <div class="mx-auto container mt-12 text-center">
+        <h1 class="font-bold text-3xl text-center">Portfolio</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+            <div
+                class="bg-neutral-800 w-256 content-center py-12 rounded-lg duration-300 hover:-translate-y-2"
+            >
+                <img
+                    src="/assets/img/nitronodes.png"
+                    width="64px"
+                    class="mx-auto"
+                />
+                <h2 class="mt-6 font-semibold text-2xl">NitroNodes</h2>
+                <p>Free 24/7 hosting service</p>
+                <br />
+                <Button url="https://nitronodes.xyz">Visit</Button>
+            </div>
+            <div
+                class="bg-neutral-800 w-256 content-center py-12 rounded-lg duration-300 hover:-translate-y-2"
+            >
+                <img src="/assets/img/vest.png" width="64px" class="mx-auto" />
+                <h2 class="mt-6 font-semibold text-2xl">Vest</h2>
+                <p>Powerful multifunctional discord bot</p>
+                <br />
+                <Button url="https://nitronodes.xyz">Visit</Button>
+            </div>
+            <div
+                class="bg-neutral-800 w-256 content-center py-12 rounded-lg duration-300 hover:-translate-y-2"
+            >
+                <img
+                    src="/assets/img/lemontools.png"
+                    width="64px"
+                    class="mx-auto"
+                />
+                <h2 class="mt-6 font-semibold text-2xl">LemonTools</h2>
+                <p>Powerful cheating software</p>
+                <br />
+                <Button url="https://discord.gg/uXWZKNfBnp">Discord</Button>
+            </div>
+        </div>
+    </div>
+</PageHolder>

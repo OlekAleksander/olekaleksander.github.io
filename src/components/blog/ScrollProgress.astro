@@ -1,0 +1,16 @@
+<div class="fixed inset-x-0 z-50 top-0 w-0 duration-200" id="scroll-bar">
+    <div class="h-1 bg-violet-500 shadow-md"></div>
+</div>
+<script>
+    window.addEventListener("scroll", function () {
+        let height = document.documentElement;
+
+        let scrollTop = height.scrollTop;
+        let scrollHeight = height.scrollHeight;
+
+        let percentage = Math.round(
+            (scrollTop / (scrollHeight - height.clientHeight)) * 100
+        );
+        document.getElementById("scroll-bar").style.width = `${percentage}%`;
+    });
+</script>

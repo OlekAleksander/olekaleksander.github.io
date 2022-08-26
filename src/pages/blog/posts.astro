@@ -1,0 +1,14 @@
+---
+import PageHolder from "../../layouts/PageHolder.astro";
+import PostsGrid from "../../components/blog/PostsGrid.jsx";
+const articles = await fetch(
+    "http://localhost:1337/api/articles?populate=*&sort=id:desc"
+).then((res) => res.json());
+---
+
+<PageHolder title="Blog Posts">
+    <div class="mx-auto container mt-12 text-center">
+        <h1 class="font-bold text-3xl text-center">Blog posts</h1>
+        <PostsGrid posts={articles.data} />
+    </div>
+</PageHolder>

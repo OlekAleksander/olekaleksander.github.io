@@ -1,0 +1,19 @@
+---
+import PageHolder from "../../layouts/PageHolder.astro";
+import BlogPost from "../../components/blog/BlogPost";
+import ScrollToTop from "../../components/blog/ScrollToTop.astro";
+import ScrollProgress from "../../components/blog/ScrollProgress.astro";
+import Footer from "../../components/Footer.astro";
+
+const { slug } = Astro.params;
+const postItem = await fetch(
+    `http://localhost:1337/api/articles?filters[slug][$eq]=${slug}&populate=*`
+).then((x) => x.json());
+console.log(postItem);
+---
+
+<PageHolder title={postItem.data[0].attributes.title}>
+    <ScrollProgress />
+    <BlogPost post={postItem.data[0]} />
+    <ScrollToTop />
+</PageHolder>
